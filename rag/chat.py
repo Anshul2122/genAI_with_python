@@ -10,8 +10,8 @@ load_dotenv()
 
 
 
-if not os.environ.get("AIzaSyB9ZsClLJ-8Ysi9JyEhIXCXYwJj-405TR4"):
-  os.environ["AIzaSyB9ZsClLJ-8Ysi9JyEhIXCXYwJj-405TR4"] = getpass.getpass("Enter API key for Google Gemini: ")
+if not os.environ.get("GEMINI_API_KEY"):
+  os.environ["GEMINI_API_KEY"] = getpass.getpass("Enter API key for Google Gemini: ")
 
 client = OpenAI(
     api_key=os.getenv("GEMINI_API_KEY"),
