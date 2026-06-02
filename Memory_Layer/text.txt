@@ -1,0 +1,11 @@
+# from qdrant_client import QdrantClient
+
+# client = QdrantClient(host="localhost", port=6333)
+# collections = client.get_collections()
+# print("Existing collections in Qdrant:")
+# print(collections)
+# for collection in client.get_collections().collections:
+#     client.delete_collection(collection.name)
+#     print(f"Deleted: {collection.name}")
+# # default collection name mem0 uses
+# print("Collections deleted")
